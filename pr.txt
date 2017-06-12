@@ -1,0 +1,44 @@
+	float[] C = {-1,-1};
+        
+        float[][] A = {
+            { 1f, -1f},
+            { -1f, 1f}
+        };
+        float[] b = {4,4};
+        String[] s = {"min","<=","<="};
+        Problema p1 = new Problema(A, C, b, s);
+
+        float[] C1 = {-1, -2};
+        float[][] A1 = {
+            { 1, 1},
+            { 1,-1},
+            {-1, 1}
+        };
+        float[] b1 = {6, 4, 4};
+        String[] s1 = {"min","<=","<=","<="};
+        Problema p2 = new Problema(A1, C1, b1, s1);
+        //---
+	//---
+        float[] C3 = {-2, -1};
+        float[][] A3 = {
+            { 1, 1},
+            { 1, 0},
+            { 0, 1}
+        };
+        float[] b3 = {4, 3, 3.5f};
+        String[] s3 = {"min","<=","<=","<="};
+        Problema p4 = new Problema(A3, C3, b3, s3);
+        //---
+        float[] C4 = {-5, -3};
+        float[][] A4 = {
+            { 3, 5},
+            { 5, 2}
+        };
+        float[] b4 = {15, 10};
+        String[] s4 = {"min","<=","<="};
+        Problema p5 = new Problema(A4, C4, b4, s4);
+        
+//simplex.simplex(p1); // Tem Infinitas Soluções OK
+//simplex.simplex(p2); // Tem Ótima OK
+//simplex.simplex(p4); // Tem Ótima
+//simplex.simplex(p5); // Tem Ótima OK
